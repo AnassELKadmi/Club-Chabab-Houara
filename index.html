@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./master.css">
+    <!-- CSS -->
+    <!-- font font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font font-awesome -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Club Chabab Houara</title>
+    <link rel="icon" type="image/png" href="./imgs/CCH-logo.png">
+
+  </head>
+  <body>
+    <main>
+    <!-- header -->
+      <header>        
+        <div class="logo" >        
+          <h1>CCH</h1>
+          <div class="pic"><img src="./imgs/logo.png" alt="" /></div>       
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="#Matches">Matches</a></li>
+            <li><a href="#Ranking">Ranking</a></li>
+            <li><a href="#Team" onclick="window.location.href='team.html'">Team</a></li>
+            <li><a href="#About-Us">About Us</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          
+          <a href="" id="menuButton">☰</a>
+        
+      </div>
+      </header>
+    <!-- header -->
+    <!-- main page -->
+      <div id="Home" class="main-page">
+        <div id="mega" class="mega-menu">
+          <ul class="links">
+            <li>
+              <a class="click" href="#Home"><i class="fa-solid fa-house-chimney-window"></i></i> Home</a>
+            </li>
+            <li>
+              <a class="click" href="#Ranking"><i class="fa-solid fa-ranking-star"></i> Rnaking</a>
+            </li>
+            <li>
+              <a class="click" href="#Team" onclick="window.location.href='team.html'"> <i class="fa-solid fa-people-group"></i> Team</a>
+            </li>
+            <li>
+              <a class="click" href="#About-Us"> <i class="far fa-clipboard fa-fw"></i> About Us</a>
+            </li>
+            <li>
+              <a class="click" href="#Matches"
+                ><i class="far fa-calendar-alt fa-fw"></i> Matches</a>
+              </li>
+              <li>
+                <a class="click" href="#Fans"
+                onclick="window.location.href='Fans.html'" ><i class="far fa-calendar-alt fa-fw"></i> Fans</a>
+                </li>
+          </ul>
+          <ul class="links">
+            <div class="fans">
+              <img src="./imgs/chh66.jpg" alt="">
+              <a href="Fans.html" onclick="window.location.href='Fans.html'">Our Fans are Our Strength</a>
+            </div>
+          </ul>
+        </div>
+        <div class="text">
+          <h1 data-lang="نادي شباب هوارة ">Club Chabab Houara :</h1>
+          <p data-lang="فخر مدينة هوارة">Pride of Houara city</p>
+          <div class="main-button ">
+            <a href="#Matches" " data-lang="المبارة القادمة">Next Match</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    <!-- main page -->
+        <!-- Matches -->
+      <div id="Matches" class="matches">
+          <h1 class="main-headding">Matches</h1>
+          <!-- Trigger button to go to slide 3 -->
+          <div class="container swiper mySwiper ">
+            <div class="swiper-wrapper">
+              <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 01</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/IZK.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">IZK</span>
+              </div>
+            </div> 
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 02</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/OCY.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">OCY</span>
+              </div>
+            </div>
+            <div class="match-card swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 03</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/USAT.jpg" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">USAT</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 04</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/HLO.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">Hlo</span>
+              </div>
+            </div>
+            <div class="match-card swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 05</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/RB.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">RB</span>
+              </div>
+            </div>
+            <div class="match-card swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 06</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/WASK.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">WASK</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 07</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/ust-removebg-preview.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">UST</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 08</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/AMSA.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">AMSA</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 09</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/ass.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">ASS</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 10</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/ASM.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">ASM</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 11</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/FUS.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">FUS</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 12</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/FRN.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">FRN</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 13</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/CISM.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">CISM</span>
+              </div>
+            </div>
+            <div class="match-card  swiper-slide"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 14</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/WST.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">WST</span>
+              </div>
+            </div>
+            <div class="match-card   swiper-slide" id="next-match"> 
+              <div class="team team-home">
+                <img src="./imgs/CCH-logo.png" alt="Team 1 Logo" class="team-logo" />
+                <span class="team-name">CCH</span>
+              </div>
+        
+              <div class="match-info">
+                <span class="match-date">Week 15</span>
+                <div class="score-box">
+                  <span class="resultORvs"></span>
+                </div>
+                <span class="match-status"></span>
+              </div>
+        
+              <div class="team team-away">
+                <img src="./imgs/edit/usb.png" alt="Team 2 Logo" class="team-logo" />
+                <span class="team-name">USB</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          </div>
+
+          
+        </div> 
+        <!-- Matches -->
+        <div class="separate">
+          <img src="./imgs/CCH-logo.png" alt="">
+        </div>
+        <!-- Ranking -->
+        <div id="Ranking" class="Ranking">
+          <h1 class="main-headding ">Ranking & Achievements </h1>
+          
+          <div class="-countainer">
+            <div class="classment">
+              <div style="max-height:75vh; overflow:auto;  width: 100%;">
+                <iframe id="sofa-standings-embed-97358-67726" 
+                        src="https://widgets.sofascore.com/embed/tournament/97358/season/67726/standings/National%2024%2F25?widgetTitle=National%2024%2F25&showCompetitionLogo=true" 
+                        style="height:963px!important;max-width:768px!important;width:100%!important;" 
+                        frameborder="0" scrolling="no">
+                </iframe>
+              </div>
+            </div>
+            <div class="Achievements">
+              <h2 class="main-headding gg">Proud Moments</h2>
+              <ul class="rows">
+                <li>First Division Amateur / South Champion    <span>2023/2024</span> </li>
+                <li>Amateur National Championship Champion <span>2013</span></li>
+                <li>Amateur National Championship Champion <span>2006</span></li>
+                <li>#6th place in Moroccan league 2 Division <span>2009/2010</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Ranking -->
+        <div class="separate">
+          <img src="./imgs/CCH-logo.png" alt="">
+        </div>
+        <!-- Gallery -->
+        <div class="gallery">
+          <h1 class="main-headding ">Gallery </h1>
+          <p class="parag"> Last Match Pictures </p>
+          <div class="pictures">
+            <div class="box"><img src="./imgs/match/pic1.jpg" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic2.jpg" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic3.jpg" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic12.jpg" alt=""></div>
+            <div class="box more"><img src="./imgs/match/pic13.jpg" alt=""></div>
+            <div class="box more"><img src="./imgs/match/pic11.jpg" alt=""></div>
+            <div class="box more Extra"><img src="./imgs/match/pic10.jpg" alt=""></div>
+            <div class="box more Extra"><img src="./imgs/match/pic9.jpg" alt=""></div>
+          </div>
+        </div>
+        <!-- Gallery -->
+        <div class="separate">
+          <img src="./imgs/CCH-logo.png" alt="">
+        </div>
+        <!-- About Us  -->
+        <div id="About-Us" class="About-Us">
+          <h1 class="main-headding ">About Us </h1>
+          <p class="main-headding">CCH: A Legacy of Football Since 1965</p>
+          <div class="container">
+            <div class="roboto-condensed-uniquifier our-text">
+              <h2 >
+                <span class="yelow">Club Chabab Houara</span>, founded in 1965 in Houara, Morocco, is a historic football club now competing in the Moroccan third division GNFA 1. With a legacy of passion and determination, we continue to represent our community with pride in black and yellow.</h2>
+            </div>
+            <div class="logo">
+              <img src="./imgs/CCH-logo.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- About Us  -->
+        
+        <footer>
+          <p class="para roboto-condensed-uniquifier">Follow Us On Social Media</p>
+        <ul class="s-m">
+        <li><a href="https://www.facebook.com/clubchababhouaracch" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/clubchababhouara/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.threads.net/@clubchababhouara" target="_blank"><i class="fa-brands fa-threads"></i></a></li>
+        <li><a href="https://www.youtube.com/@chababhouara454" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <div class="F-container">
+          <div class="links">
+          <ul>
+            <h2 class="para roboto-condensed-uniquifier">Other Sports :</h2>
+            <li><i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/ecolechababhouarafootball/">Our Football Academy</a></li>
+            <li><i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/chababhouarabasketball/">Basket-Ball Team </a></li>
+            <li><i class="fa-brands fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/acch_volleyball/">Volley-Ball Team</a></li>
+          </ul>
+        </div>
+          <div class="map">
+            <h2 class="para roboto-condensed-uniquifier">Our Stadium : <span>16 November Stadium</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.0884468459553!2d-9.191210878435834!3d30.405232371093017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3d7e164000001%3A0xfa02abf13df701fb!2sStade%2016%20novembre!5e0!3m2!1sar!2sma!4v1738694109642!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script> 
+  
+    
+  </body>
+</html>
