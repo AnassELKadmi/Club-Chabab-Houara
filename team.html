@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./master.css" />
+
+    <!-- font font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <title>Team Chabab Houara</title>
+    <link rel="icon" type="image/png" href="./imgs/CCH-logo.png">
+
+    <style>
+      /* Style for Navigation Buttons */
+      .slick-prev,
+      .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: white;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .slick-prev {
+        left: 10px;
+      }
+
+      .slick-next {
+        right: 10px;
+      }
+
+      .slick-prev:hover,
+      .slick-next:hover {
+        background-color: #debe05;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- header -->
+      <header>
+        <div class="logo" >         
+          <h1>CCH</h1>
+          <div class="pic"><img src="./imgs/logo.png" alt="" /></div>    
+        </div>
+
+        <div class="link">
+          <ul>
+            <li>
+              <a href="#home" onclick="window.location.href='index.html'"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Ranking"
+                onclick="window.location.href='index.html#Ranking'"
+                >Ranking</a
+              >
+            </li>
+            <li>
+              <a href="#Team" onclick="window.location.href='team.html'"
+                >Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="#About"
+                onclick="window.location.href='index.html#About-Us'"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          
+          <a href="" id="menuButton">☰</a>
+        </div>
+        <div id="mega" class="mega-menu">
+          <ul class="links">
+            <li>
+              <a class="click" href="#Home" onclick="window.location.href='index.html'"><i class="fa-solid fa-house-chimney-window"></i></i> Home</a>
+            </li>
+            <li>
+              <a class="click" href="#Ranking" onclick="window.location.href='index.html#Ranking'"><i class="fa-solid fa-ranking-star"></i> Rnaking</a>
+            </li>
+            <li>
+              <a class="click" href="#Team" onclick="window.location.href='team.html'"> <i class="fa-solid fa-people-group"></i> Team</a>
+            </li>
+            <li>
+              <a class="click" href="#About-Us" onclick="window.location.href='index.html#Abou-Us'"> <i class="far fa-clipboard fa-fw"></i> About Us</a>
+            </li>
+            <li>
+              <a class="click" href="#Matches" onclick="window.location.href='index.html#Matches'"
+                ><i class="far fa-calendar-alt fa-fw"></i> Matches</a>
+              </li>
+              <li>
+                <a class="click" href="#Fans"
+                onclick="window.location.href='Fans.html'"><i class="far fa-calendar-alt fa-fw"></i> Fans</a>
+                </li>
+          </ul>
+          <ul class="links">
+            <div class="fans">
+              <img src="./imgs/chh66.jpg" alt="">
+              <a href="Fans.html" onclick="window.location.href='Fans.html'">Our Fans are Our Strength</a>
+            </div>
+          </ul>
+        </div>
+      </header>
+      <!-- header -->
+
+      <div id="Team" class="Team">
+        <div id="wrapper" class="container mySwiper">
+          <h1 class="main-headding">The CCH professional squad</h1>
+          <h1 class="part">Goalkeepers :</h1>
+          <div class="goalkeper">
+            <div class="one">
+              <img src="./imgs/players/goalkeeper1.jpg" alt="" />
+              <div class="info">
+                <span class="position">Goalkeeper</span>
+                <span class="age"> 26 Year Old</span>
+              </div>
+            </div>
+            <div class="one">
+              <img src="./imgs/players/goalkeeper2.jpg" alt="" />
+              <div class="info">
+                <span class="position">Goalkeeper</span>
+                <span class="age"> 24 Year Old</span>
+              </div>
+            </div>
+            <div class="one">
+              <img src="./imgs/players/goalkeeper3.jpg" alt="" />
+              <div class="info">
+                <span class="position">Goalkeeper</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+          </div>
+          <h1 class="part two">Defenders :</h1>
+          <div class="defenders">
+            <div class="item sw">
+              <img src="./imgs/players/defenders/lb1.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 26 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/defenders/cb1.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 24 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/defenders/cb2.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/defenders/cb3.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/defenders/cb4.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/defenders/cb5.jpg" alt="" />
+              <div class="info">
+                <span class="position">Goalkeeper</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+          </div>
+          <h1 class="part two">Midfielders :</h1>
+          <div class="Midfielders defenders">
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm2.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 26 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 24 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm3.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm4.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm5.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm6.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/mid/cm7.jpg" alt="" />
+              <div class="info">
+                <span class="position">Midfielders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+          </div>
+          <h1 class="part two">Forwards :</h1>
+          <div class="Forwards defenders">
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st11.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 26 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st22.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 24 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st33.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st44.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st55.jpg" alt="" />
+              <div class="info">
+                <span class="position">Defenders</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+            <div class="item sw">
+              <img src="./imgs/players/forwads/st66.jpg" alt="" />
+              <div class="info">
+                <span class="position">Goalkeeper</span>
+                <span class="age"> 21 Year Old</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+
+      <!-- Team -->
+      <!-- Matches -->
+    </main>
+    <script src="./team.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </body>
+</html>
