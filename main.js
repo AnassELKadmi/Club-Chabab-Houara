@@ -91,9 +91,9 @@ window.addEventListener("resize", function () {
 // let sml = 15;
 // let mdm = 2;
 // let lrg = 10;
-let sml = 0;
-let mdm = 0;
-let lrg = 0;
+let sml = 3;
+let mdm = 3;
+let lrg = 3;
 
 // Function to handle the slide navigation based on screen size
 function handleSlideNavigation() {
