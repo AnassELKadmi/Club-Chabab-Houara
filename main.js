@@ -91,9 +91,9 @@ window.addEventListener("resize", function () {
 // let sml = 15;
 // let mdm = 2;
 // let lrg = 10;
-let sml = 0;
-let mdm = 0;
-let lrg = 0;
+let sml = 15;
+let mdm = 2;
+let lrg = 11;
 
 // Function to handle the slide navigation based on screen size
 function handleSlideNavigation() {
@@ -143,3 +143,32 @@ re.onreadystatechange = function () {
     }
   }
 };
+
+////////backto top button ///
+const backtoTop = document.getElementById("backToTop");
+const herosection = document.getElementById("header");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300 && window.innerWidth >= 768) {
+    backtoTop.style.display = "block";
+  } else {
+    backtoTop.style.display = "none";
+  }
+});
+backtoTop.addEventListener("click", () => {
+  herosection.scrollIntoView({ behavior: "smooth" });
+});
+
+const backToTop = document.getElementById("backToTop");
+const heroSection = document.getElementById("hero"); // make sure you have this ID
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300 && window.innerWidth >= 768) {
+    backToTop.classList.add("active");
+  } else {
+    backToTop.classList.remove("active");
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  heroSection.scrollIntoView({ behavior: "smooth" });
+});

@@ -27,6 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <title>Giallo Pazzi</title>
     <link rel="icon" type="image/png" href="./imgs/CCH-logo.png" />
   </head>
@@ -34,7 +35,9 @@
     <main>
       <!-- header -->
       <header>
-        <div class="logo">
+        <div class="logo" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="300">
           <h1>CCH</h1>
           <div class="pic"><img src="./imgs/logo.png" alt="" /></div>
         </div>
@@ -110,10 +113,10 @@
     <p class="para">Giallo Pazzi : Loyal since <span>2009</span>, always behind our club!</p>
 
     <div class="container">
-    <div class="roboto-condensed-uniquifier our-text">
+    <div class="roboto-condensed-uniquifier our-text " data-aos="fade-right" data-aos-delay="300">
       <h2><span>Ultras Giallo Pazzi</span>, the official fan group of Chabab Houara, was founded in 2009. Since then, they have remained fiercely loyal, standing behind their club through every victory and challenge. With passion and unwavering support, they continue to be the heartbeat of Chabab Houara, always cheering with pride</h2>
     </div>
-    <div class="logo">
+    <div class="logo" data-aos="fade-left" data-aos-delay="300">
       <img src="./imgs/giallo.png" alt="">
     </div>
     </div>
@@ -131,29 +134,29 @@
     <h1 class="roboto-condensed-uniquifier">Moments of pure passion :</h1>
     <div class="countainer">
       <div class="box">
-        <img src="./imgs/2  (1).jpg" alt="">
+        <img src="./imgs/2  (1).jpg" data-aos="fade-down-right" alt="">
       </div>
       <div class="box">
-        <img src="./imgs/2  (2).jpg" alt="">
+        <img src="./imgs/2  (2).jpg" data-aos="fade-down-right" alt="">
       </div>
       <div class="box">
-        <img src="./imgs/3.jpg" alt="">
+        <img src="./imgs/3.jpg" data-aos="fade-down-left" alt="">
       </div>
       <div class="box">
-        <img src="./imgs/4.jpg" alt="">
+        <img src="./imgs/4.jpg" data-aos="fade-down-left" alt="">
       </div>
       <div class="box">
-        <img src="./imgs/chh22.jpg" alt="">
+        <img src="./imgs/chh22.jpg" data-aos="fade-down-right" alt="">
       </div>
       <div class="box">
-        <img src="./imgs/5.jpg" alt="">
+        <img src="./imgs/5.jpg" data-aos="fade-down-right" alt="">
 
       </div>
       <div class="box more">
-        <img src="./imgs/chh66.jpg" alt="">
+        <img src="./imgs/chh66.jpg" data-aos="fade-down-left" alt="">
       </div>
       <div class="box more">
-        <img src="./imgs/CHH44.jpg" alt="">
+        <img src="./imgs/CHH44.jpg" data-aos="fade-down-left" alt="">
 
       </div>
     </div>
@@ -161,7 +164,7 @@
     </div>
     <!-- fans gallery -->
     </div>
-    <footer>
+    <footer data-aos="zoom-in-up">
       <p class="para roboto-condensed-uniquifier">Follow Us On Social Media</p>
     <ul class="s-m">
     <li><a href="https://www.facebook.com/clubchababhouaracch" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -184,7 +187,21 @@
       </div>
     </div>
     </footer>
+    <button id="backToTop"> <i class="fa-solid fa-arrow-up"></i> </button>
+
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./fans.js"></script> 
+    <script>
+      AOS.init({
+  disable: function () {
+    return window.innerWidth < 768;
+  },
+});
+
+    </script>
   </body>
 </html>

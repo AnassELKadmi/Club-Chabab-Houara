@@ -987,9 +987,9 @@ footer .F-container .links h2 {
   height: 200px;
   border-radius: 6px;
   box-shadow: #504507 4px 4px 4px;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 60%;
+}
+.fans-gallery .countainer .box img:hover {
+  transform: scale(1.1);
 }
 
 .fans-gallery > h1 {
@@ -1046,19 +1046,9 @@ footer .F-container .links h2 {
   border-radius: 6px;
   box-shadow: #837214 4px 4px 4px;
   object-fit: cover;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 60%;
 }
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
+.gallery .pictures .box img:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 540px) {
@@ -1086,4 +1076,29 @@ footer {
   position: relative; /* Ensures it stays in normal flow */
   width: 100%;
   bottom: 0;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 28px;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  border: #debe05 1px solid;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 1000;
+}
+#backToTop.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+#backToTop:hover {
+  color: #debe05;
 }

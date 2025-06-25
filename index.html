@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <title>Club Chabab Houara</title>
     <link rel="icon" type="image/png" href="./imgs/CCH-logo.png">
 
@@ -28,8 +28,10 @@
   <body>
     <main>
     <!-- header -->
-      <header>        
-        <div class="logo" >        
+      <header id="header">        
+        <div  class="logo"  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="300">        
           <h1>CCH</h1>
           <div class="pic"><img src="./imgs/logo.png" alt="" /></div>       
         </div>
@@ -80,9 +82,9 @@
             </div>
           </ul>
         </div>
-        <div class="text">
+        <div data-aos="fade-right" data-aos-delay="300" class="text">
           <h1 data-lang="نادي شباب هوارة ">Club Chabab Houara :</h1>
-          <p data-lang="فخر مدينة هوارة">Pride of Houara city</p>
+          <p data-lang="فخر مدينة هوارة">Pride of Houara City</p>
           <div class="main-button ">
             <a href="#Matches" " data-lang="المبارة القادمة">Next Match</a>
           </div>
@@ -406,9 +408,9 @@
                 </iframe>
               </div>
             </div>
-            <div class="Achievements">
+            <div  class="Achievements">
               <h2 class="main-headding gg">Proud Moments</h2>
-              <ul class="rows">
+              <ul class="rows" data-aos="fade-up-left">
                 <li>First Division Amateur / South Champion    <span>2023/2024</span> </li>
                 <li>Amateur National Championship Champion <span>2013</span></li>
                 <li>Amateur National Championship Champion <span>2006</span></li>
@@ -426,14 +428,14 @@
           <h1 class="main-headding ">Gallery </h1>
           <p class="parag"> Last Match Pictures </p>
           <div class="pictures">
-            <div class="box"><img src="./imgs/match/pic1.jpg" alt=""></div>
-            <div class="box"><img src="./imgs/match/pic2.jpg" alt=""></div>
-            <div class="box"><img src="./imgs/match/pic3.jpg" alt=""></div>
-            <div class="box"><img src="./imgs/match/pic12.jpg" alt=""></div>
-            <div class="box more"><img src="./imgs/match/pic13.jpg" alt=""></div>
-            <div class="box more"><img src="./imgs/match/pic11.jpg" alt=""></div>
-            <div class="box more Extra"><img src="./imgs/match/pic10.jpg" alt=""></div>
-            <div class="box more Extra"><img src="./imgs/match/pic9.jpg" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic1.jpg" data-aos="fade-down-right" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic2.jpg" data-aos="fade-down-right" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic3.jpg" data-aos="fade-down-left" alt=""></div>
+            <div class="box"><img src="./imgs/match/pic12.jpg" data-aos="fade-down-left" alt=""></div>
+            <div class="box more"><img src="./imgs/match/pic13.jpg" data-aos="fade-down-right" alt=""></div>
+            <div class="box more"><img src="./imgs/match/pic11.jpg" data-aos="fade-down-right" alt=""></div>
+            <div class="box more Extra"><img src="./imgs/match/pic10.jpg" data-aos="fade-down-left" alt=""></div>
+            <div class="box more Extra"><img src="./imgs/match/pic9.jpg" data-aos="fade-down-left" alt=""></div>
           </div>
         </div>
         <!-- Gallery -->
@@ -445,18 +447,18 @@
           <h1 class="main-headding ">About Us </h1>
           <p class="main-headding">CCH: A Legacy of Football Since 1965</p>
           <div class="container">
-            <div class="roboto-condensed-uniquifier our-text">
+            <div class="roboto-condensed-uniquifier our-text" data-aos-duration="400"  data-aos="fade-up-right">
               <h2 >
                 <span class="yelow">Club Chabab Houara</span>, founded in 1965 in Houara, Morocco, is a historic football club now competing in the Moroccan third division GNFA 1. With a legacy of passion and determination, we continue to represent our community with pride in black and yellow.</h2>
             </div>
-            <div class="logo">
+            <div data-aos="fade-up" class="logo" data-aos-duration="400">
               <img src="./imgs/CCH-logo.png" alt="">
             </div>
           </div>
         </div>
         <!-- About Us  -->
         
-        <footer>
+        <footer data-aos="zoom-in-up">
           <p class="para roboto-condensed-uniquifier">Follow Us On Social Media</p>
         <ul class="s-m">
         <li><a href="https://www.facebook.com/clubchababhouaracch" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -479,10 +481,23 @@
           </div>
         </div>
         </footer>
+        <button id="backToTop"> <i class="fa-solid fa-arrow-up"></i> </button>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script> 
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      AOS.init({
+  disable: function () {
+    return window.innerWidth < 768;
+  },
+});
+
+    </script>
+
     
   </body>
 </html>
